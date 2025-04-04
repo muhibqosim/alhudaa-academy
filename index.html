@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Al-Hudaa Academy is an arabic institute, bith offline and online, with focus on learning the Qur-aan, its memorization.">
+  <meta name="keywords" content="Al-Hudaa Academy; islmlamic eittquettes; Islamic guidance; qur-an, memorization, revision ">
+  <meta name="author" content="Qosim Muhibudeen">
+  <!-- tailwind-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- java script swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- otg -->
+  <meta property="og:image" content="https://muhibqosim.github.io/alhudaa-academy/img/solace-logo.jpg ">
+  <meta property="og:url" content="https://muhibqosim.github.io/solace-buk/index.html">
+<!--css link -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--<script src="https://cdn.tailwindcss.com"></sscript-->
+  <!--js links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+  
+  <!--Web fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap" rel="stylesheet">
+  
+  <title> Al-Hudaa Academy </title>
+  <style>
+
+  </style>
+</head>
+
+<!-- body starts here-->
+
+<body>
+  <main class="navbar ">
+    <header class="header bg-white" style="position: sticky; top:0; ">
+      <!--handles at header-->
+      <div class="flex justify-between md:px-6 bg-gray-800">
+        <div class="text-white text-sm  py-auto tracking-tighter">
+          <a href=" " class="fab fa-facebook py-3 px-2 bg-gray-400 "> </a>
+          <a href=" " class="fab fa-twitter py-3 px-2  bg-gray-400 "> </a>
+          <a href=" " class="fab fa-whatsapp py-3 px-2 bg-gray-400"> </a>
+          <a href=" " class="far fa-envelope py-3 px-2 bg-gray-400"> </a>
+          <a href=" " class="fab fa-telegram py-3 px-2  bg-gray-400"> </a>
+        </div>
+        <!--search button-->
+        <!-- <div class=" ">-->
+        <div class="flex md:text-3xl  ">
+          <input type="text" id="searchInput" placeholder="Enter your key term" class="hover-border hover-border-gray-400 py-1 w-40 md:w-80 ">
+          <button id="searchButton" class=" hover:bg-gray-600 text-white px-2.5 py-1 fas fa-search"> </button>
+        </div>
+        <!--</div>-->
+
+      </div>
+    </header>
+    <!-- Navigation menu -->
+    <nav class="navbar">
+      <div class="flex justify-between px-2 py-2.5 md:py-6 bg-red-200">
+        <div class="flex ">
+          <div class=" my-auto ">
+            <img class="h-14 md:h-28" src="https://i.ibb.co/ckKpptZ/SOLACE-CHAMBERS-LOGO-PNG.png" alt="logo" style=" ">
+          </div>
+          <h1 class="uppercase pl-1 leading-5 font-bold my-auto " style="font-family: "> <span class="text-lg tracking-tighter md:text-6xl md:tracking-widest"> Al-Hudaa Academy </span> </h1> <!--<br> <span class="text-lg md:text-5xl tracking-wide md:tracking-wi"> Bayero University, Kano </span> -->
+        </div>
+        <!-- desktop menu bar-->
+
+        <div class="pt-2 md:py-14 md:pr-4">
+          <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white md:text-6xl" aria-label="toggle menu" onclick="toggleMenu()">
+            <div class="container " onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>
+        </div>
+</div>
+</div>
+        <!-- mobile menu bar -->
+        <div class="hidden  bg-red-500 md:text-4xl md:px-5" id="mobile-menu">
+          <a href="index.html" class="block py-2 md:py-5 px-4  font-semibold hover:text-white hover:bg-gray-900">Home</a>
+          <a href="about.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900"> About us</a>
+          <a href="programs.html" class="block md:py-5  py-2 px-4  font-semibold hover:text-white hover:bg-gray-900"> Programs</a>
+          <a href="legalbit.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Weekly Legal Bit</a>
+          <a href="poetrylines.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Poetry Lines</a>
+          <a href="news.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">News and Updates </a>
+          <a href="archives.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Archives </a>
+
+          <a href="#contact" class="block py-2 md:py-5 px-4 font-semibold hover:text-white hover:bg-gray-900">Contact</a>
+        </div>
+      </div>
+
+    </nav>
+
+  </main>
+
+
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
