@@ -34,11 +34,33 @@
   
   
   <!--Web fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <title> Al-Hudaa Academy </title>
+  <!--embedded css style starts here-->
   <style>
+ 
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+            .bg-img {
+                background-image: url('https://i.ibb.co/jPvX2nrQ/evnt-img1.jpg');
+                height: 65vh;
+                center/cover no-repeat;
+                color: white;
+                text-align: center;
+            }
+    }
+        @media (min-width:700px) {
+            .bg-img {
+                background-image: url('https://i.ibb.co/jPvX2nrQ/evnt-img1.jpg');
+                height: 70vh;
+                center/cover no-repeat;
+                color: white;
+                text-align: center;
+            }
+        }
+
 
   </style>
 </head>
@@ -47,20 +69,20 @@
 
 <body>
   <main class="navbar ">
-    <header class="header bg-white" style="position: sticky; top:0; ">
+    <header class="header t-header-bg-color" style="position: sticky; top:0; ">
       <!--handles at header-->
-      <div class="flex justify-between md:px-6 bg-gray-800">
+      <div class="flex justify-between md:px-6 ">
         <div class="text-white text-sm  py-auto tracking-tighter">
-          <a href=" " class="fab fa-facebook py-3 px-2 bg-gray-400 "> </a>
-          <a href=" " class="fab fa-twitter py-3 px-2  bg-gray-400 "> </a>
-          <a href=" " class="fab fa-whatsapp py-3 px-2 bg-gray-400"> </a>
-          <a href=" " class="far fa-envelope py-3 px-2 bg-gray-400"> </a>
-          <a href=" " class="fab fa-telegram py-3 px-2  bg-gray-400"> </a>
+          <a href=" " class="fab fa-facebook py-3 px-2 btn-color "> </a>
+          <a href=" " class="fab fa-twitter py-3 px-2  btn-color "> </a>
+          <a href=" " class="fab fa-whatsapp py-3 px-2 btn-color"> </a>
+          <a href=" " class="far fa-envelope py-3 px-2 btn-color"> </a>
+          <a href=" " class="fab fa-telegram py-3 px-2  btn-color"> </a>
         </div>
         <!--search button-->
         <!-- <div class=" ">-->
         <div class="flex md:text-3xl  ">
-          <input type="text" id="searchInput" placeholder="Enter your key term" class="hover-border hover-border-gray-400 py-1 w-40 md:w-80 ">
+          <input type="text" id="searchInput" placeholder="Enter your key term" class="hover-border t-header-bg-color border-0 hover-border-gray-400 text-white py-1 w-40 ">
           <button id="searchButton" class=" hover:bg-gray-600 text-white px-2.5 py-1 fas fa-search"> </button>
         </div>
         <!--</div>-->
@@ -69,16 +91,16 @@
     </header>
     <!-- Navigation menu -->
     <nav class="navbar">
-      <div class="flex justify-between px-2 py-2.5 md:py-6 bg-red-200">
+      <div class="flex justify-between px-2 py-2.5 md:py-6 b-header-bg-colo bg-white my-auto">
         <div class="flex ">
-          <div class=" my-auto ">
-            <img class="h-14 md:h-28" src="https://i.ibb.co/ckKpptZ/SOLACE-CHAMBERS-LOGO-PNG.png" alt="logo" style=" ">
+          <div class=" ">
+            <img class="max-h-16 max-w-24 md:h-28 " src="https://i.ibb.co/8ghHmDF4/Green-Pastel-Modern-Mosque-Islamic-Center-Logo-2-removebg-preview.png"  alt="logo" style=" ">
           </div>
-          <h1 class="uppercase pl-1 leading-5 font-bold my-auto " style="font-family: "> <span class="text-lg tracking-tighter md:text-6xl md:tracking-widest"> Al-Hudaa Academy </span> </h1> <!--<br> <span class="text-lg md:text-5xl tracking-wide md:tracking-wi"> Bayero University, Kano </span> -->
+          <!--<h1 class="uppercase leading-5 font-bold my-auto " style="font-family: "> <span class="text-base text-black tracking-tighter md:text-6xl md:tracking-widest"> Al-Hudaa Academy </span> </h1> <!--<br> <span class="text-lg md:text-5xl tracking-wide md:tracking-wi"> Bayero University, Kano </span> -->
         </div>
         <!-- desktop menu bar-->
 
-        <div class="pt-2 md:py-14 md:pr-4">
+        <div class=" ml-5 md:py-14 md:pr-4 bg-white px-3 pt-2 pb-1">
           <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white md:text-6xl" aria-label="toggle menu" onclick="toggleMenu()">
             <div class="container " onclick="myFunction(this)">
               <div class="bar1"></div>
@@ -90,27 +112,323 @@
 </div>
 </div>
         <!-- mobile menu bar -->
-        <div class="hidden  bg-red-500 md:text-4xl md:px-5" id="mobile-menu">
+        <div class="hidden text-white b-header-bg-color md:text-4xl md:px-5" id="mobile-menu">
           <a href="index.html" class="block py-2 md:py-5 px-4  font-semibold hover:text-white hover:bg-gray-900">Home</a>
-          <a href="about.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900"> About us</a>
-          <a href="programs.html" class="block md:py-5  py-2 px-4  font-semibold hover:text-white hover:bg-gray-900"> Programs</a>
-          <a href="legalbit.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Weekly Legal Bit</a>
-          <a href="poetrylines.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Poetry Lines</a>
-          <a href="news.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">News and Updates </a>
-          <a href="archives.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Archives </a>
-
-          <a href="#contact" class="block py-2 md:py-5 px-4 font-semibold hover:text-white hover:bg-gray-900">Contact</a>
+          <a href="#about" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900"> About us</a>
+          <a href="#services" class="block md:py-5  py-2 px-4  font-semibold hover:text-white hover:bg-gray-900"> Services</a>
+          <a href="#schedule" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">Class Schedule</a>
+          <a href="news.html" class="block md:py-5 py-2 px-4 font-semibold hover:text-white hover:bg-gray-900">News and Events </a>
+          <a href="#message-us" class="block py-2 md:py-5 px-4 font-semibold hover:text-white hover:bg-gray-900">Contact</a>
         </div>
       </div>
-
     </nav>
-
   </main>
+  <!-- header ends here-->
+
+<!-- image background and program  starts here-->
+<section class="bg-img bg-gray-800 bg-center relative  bg-cover bg-center w-full h-75 text-center px-5">
+  <div class="w-full opacity-80 h-full bg-cover py-20  md:pt-96 px-2.5 ">
+    
+    <div class="flex justify-center">
+      <img src="https://i.ibb.co/kgFfS4vm/bsml-txt.png" alt="" />
+    </div>
+    <div class="flex justify-center">
+          <img class="mt-5 md:mt-12" src="https://i.ibb.co/sJzDw07M/ayat-txt.png" alt="" />
+    
+        </div>
+    <div>
+      <h1 class="text-white mt-5 md:mt-12 font-extrabold text-2xl md:text-4xl"> He raised the heaven and set up the balance </h1>
+            <p class="text-white mt-5 md:mt-12  text-xl md:text-4xl"> "Surah Ar-Rahman vs 7" </p>
+    </div>
+    <div class="flex justify-center mt-5 ">
+      <button type=" " class="inline-block animate-float-in-from-bottom text-white mr-5 font-bold text-center btn  rounded-3xl uppercase md:text-5xl md:px-14 md:py-9 px-5 py-2 text-lg font-extrabold bg-green-600  shadow-lg tracking-wider rounded text-white text-sm hover:bg-green-900 "> Read more </button>
+    </div>
+  </div>
+  
+
+</section>
+
+</section>
+<main class="bg-color">
+<!-- Slider -->
+<!-- <section class="px-2.5 py-10">
+  <div>
+    <img src="https://i.ibb.co/jPvX2nrQ/evnt-img1.jpg" alt="" />
+  </div>
+
+</section>-->
+
+<!-- About us--> 
+<section class="px-2.5 py-20 md:flex md:justify-center " id="about">
+  <div class="px-16 md:px-2 ">
+    <img src="https://i.ibb.co/jPvX2nrQ/evnt-img1.jpg" class="" alt="" />
+  </div>
+  <div class=" ">
+    <h1 class="text-green-600 font-semibold text-gray-900 text-xl md:text-4xl mt-8 md:mt-10 ">  A FEW WORDS ABOUT US </h1>
+      <h2 class="font-bold text-gray-900 text-xl md:text-4xl mt-8 md:mt-10 "> About Al-Hudaa Academy</h2>
+
+        <p class="text-sm md:text-4xl mt-5 md:mt-10 "> Al-Hudaa Academy issue with a very short time to do that and I have a few questions regarding this and I will get you the very best in the faculty of you and your family have you been sir I am sending the CTC is it possible to get an appointment of the day I can do it tomorrow if he wasn't going for a ride on the group is not a good fit to the Chambers for you to come home for lunch and</p>
+         <p class="text-sm md:text-4xl mt-5 md:mt-10 "> Al-Hudaa Academy issue with a very short time to do that and I have a few questions regarding this and I will get you the very best in the faculty of you and your family have you been sir I am sending the CTC is it possible to get an appointment of the day I can do it tomorrow if he wasn't going for a ride on the group is not a good fit to the Chambers for you to come home for lunch and</p>
+
+        
+
+  </div>
+  
+</section>
 
 
+<!-- our philosophy-->
+<section class="px-2.5 py-14 section-color text-center">
+    <div class=" ">
+      <!--<h1 class="font-semibold text-gray-900 text-xs md:text-4xl md:mt-10 "> Spreading the Teachings of Islam </h1>-->
+      <h2 class="font-bold text-green-600 text-3xl md:text-6xl mt-3 md:mt-10 tracking-widest"> Our Philosophy</h2>
+ 
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 mt-5"> 
+  <!-- knowledge-->
+  <div class="border-b mt-8 px-10 py-5">
+     <i class="inline-block text-yellow-500 fas fa-book mb-5 text-5xl"> </i>
+     <h3 class="font-semibold text-yellow-500 mb-3 text-base md:text-5xl"> Knowledge </h3>
+     <p class="mb-3 text-sm text-gray-900"> We are driven by knowledge and its spread among mankind as commanded by Allah and His Messenger (peace be upon him). </p>
+  </div>
+  
+    <!-- knowledge-->
+    <div class="border-b mt-8 px-10 py-5">
+      <i class="inline-block text-yellow-500 fas fa-book mb-5 text-5xl"> </i>
+      <h3 class="font-semibold text-yellow-500 mb-3 text-base md:text-5xl"> Knowledge </h3>
+      <p class="mb-3 text-sm text-gray-900"> We are driven by knowledge and its spread among mankind as commanded by Allah and His Messenger (peace be upon him). </p>
+    </div>
+    
+    
+      <!-- knowledge-->
+      <div class="border-b mt-8 px-10 py-5">
+        <i class="inline-block text-yellow-500 fas fa-book mb-5 text-5xl"> </i>
+        <h3 class="font-semibold text-yellow-500 mb-3 text-base md:text-5xl"> Knowledge </h3>
+        <p class="mb-3 text-sm text-gray-900"> We are driven by knowledge and its spread among mankind as commanded by Allah and His Messenger (peace be upon him). </p>
+      </div>
+      
+        <!-- knowledge-->
+        <div class="border-b mt-8 px-10 py-5">
+          <i class="inline-block text-yellow-500 fas fa-book mb-5 text-5xl"> </i>
+          <h3 class="font-semibold text-yellow-500 mb-3 text-base md:text-5xl"> Knowledge </h3>
+          <p class="mb-3 text-sm text-gray-900"> We are driven by knowledge and its spread among mankind as commanded by Allah and His Messenger (peace be upon him). </p>
+        </div>
+  
+  
+  
+  </div>
 
+</section>
+
+
+<!-- what we do-->
+<section class="px-2.5 py-14 bg-gray- md:flex md:justify-center text-center" id="services">
+  <div class=" ">
+        <h1 class="font-semibold text-gray-900 text-xs md:text-4xl md:mt-10 "> Spreading the Teachings of Islam </h1>
+    <h2 class="font-bold text-green-600 text-3xl md:text-6xl mt-3 md:mt-10 tracking-widest"> Our Services </h2>
+    <p class="text-sm md:text-4xl mt-3 md:mt-10 font-light"> Al-Hudaa Academy offers: </p>
+  </div>
+  <!-- grid for our services-->
+  <div class="grid grid-cols-1 md:grid-cols-2 px-5 text-sm text-center mt-8">
+    <!--Qur-aan Recitation Perfection-->
+    <div class="bg-gray-100 py-5 px-8 group hover:text-white hover:bg-white border mb-5">
+      <i class="inline-block text-green-500 fas fa-book mb-5 text-5xl"> </i>
+      <h3 class="font-semibold text-blue-600 mb-3 text-base md:text-5xl"> Qur-aan Recitation Perfection </h3>
+      <p class="mb-3 text-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+      <a href="https://wa.me/2348029675288?text=As-salaamu alaykum warohmatullaahi wabarakaatuh!" class="text-green-500 hover:text-red-500 inline-block"> Register Now <i class="fas fa-arrow-right"></i> </a>
+    </div>
+    
+        <!--Qur-aan Recitation Perfection-->
+        <div class="bg-gray-100 py-5 px-8 group hover:text-white hover:bg-white border mb-5">
+          <i class="inline-block text-green-500 fas fa-book mb-5 text-5xl"> </i>
+          <h3 class="font-semibold text-blue-600 mb-3 text-base md:text-5xl"> Qur-aan Recitation Perfection </h3>
+          <p class="mb-3 text-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <a href="https://wa.me/2348029675288?text=As-salaamu alaykum warohmatullaahi wabarakaatuh!" class="text-green-500 hover:text-red-500 inline-block"> Register Now <i class="fas fa-arrow-right"></i> </a>
+    
+        </div>
+        
+            <!--Qur-aan Recitation Perfection-->
+            <div class="bg-gray-100 py-5 px-8 group hover:text-white hover:bg-white border mb-5">
+              <i class="inline-block text-green-500 fas fa-book mb-5 text-5xl"> </i>
+              <h3 class="font-semibold text-blue-600 mb-3 text-base md:text-5xl"> Qur-aan Recitation Perfection </h3>
+              <p class="mb-3 text-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              <a href="https://wa.me/2348029675288?text=As-salaamu alaykum warohmatullaahi wabarakaatuh!" class="text-green-500 hover:text-red-500 inline-block"> Register Now <i class="fas fa-arrow-right"></i> </a>
+        
+            </div>
+            
+                <!--Qur-aan Recitation Perfection-->
+                <div class="bg-gray-100 py-5 px-8 group hover:text-white hover:bg-white border mb-5">
+                  <i class="inline-block text-green-500 fas fa-book mb-5 text-5xl"> </i>
+                  <h3 class="font-semibold text-blue-600 mb-3 text-base md:text-5xl"> Qur-aan Recitation Perfection </h3>
+                  <p class="mb-3 text-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                  <a href="https://wa.me/2348029675288?text=As-salaamu alaykum warohmatullaahi wabarakaatuh!" class="text-green-500 hover:text-red-500 inline-block"> Register Now <i class="fas fa-arrow-right"></i> </a>
+            
+                </div>
+    
+    
+    
+  </div>
+
+</section>
+
+
+<!-- Class Schedule -->
+<section class="px-2.5 py-14 section-color md:flex md:justify-center text-center">
+  <div class=" ">
+    <h2 class="font-bold text-green-600 text-3xl md:text-6xl mt-3 md:mt-10 tracking-widest"> Our Class Schedule </h2>
+    <p class="text-sm md:text-4xl mt-3 md:mt-10 font-light"> Get abreast with our class and sessions schedule</p>
+  </div>
+  
+  <!--class schedule-->
+    <h3 class="mt-8 text-sm font-light text-green-700 text-left" id="schedule"> All Days Excluding Thursdays</h3>
+  <div class="flex mt-8">
+    <h3 class="border-r border-red-700 text-sm font-bold "> Morning Session <br /> <span class="text-xs text-center font-light mt-3"> 8:00am — 12:00pm </span></h3>
+        <h3 class="border-r border-red-700 text-sm font-bold "> Afternoon Session <br /> <span class="text-xs text-center font-light mt-3"> 1:00pm— 4:00pm </span></h3>
+    <h3 class="text-sm font-bold "> Evening Session <br /> <span class="text-xs text-center font-light mt-3"> 6:00pm — 8:00pm </span></h3>
+  </div>
+  </section>
+  
+  
+  
+
+<!-- News & Events -->
+<section class="px-2.5 py-14 " >
+  <div class=" text-center mb-14">
+    <h2 class="font-bold text-green-600 text-3xl md:text-6xl mt-3 md:mt-10 tracking-widest"> News and Events </h2>
+    <p class="text-sm md:text-4xl mt-3 md:mt-10 font-light"> Catch up with our events and updates</p>
+  </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black px-8">
+      <!-- news 1  -->
+      <article data-aos="fade-up" class="grid bg-gray-100 text-sm md:text-3xl pb-5 border mb-5">
+         <div class=" overflow-hidden rounded-t">
+           <img src="https://i.ibb.co/TYVjVdM/1674711726455563-0.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+         </div>
+         <!-- date-->
+         <div class="px-2">
+         <h3 class="mt-8 md:mt-18 text-gray-900 "> April 2, 2025</h3>
+          <!-- topic-->
+         <h3 class="font-bold text-base md:text-4xl mt-8 md:mt-18 uppercase"> Join the 30 days  Hifz Challenge </h3>
+          <!-- display-->
+         <p class="mt-8 md:mt-18 text-gray-900"> Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae… </p>
+         <!-- display-->
+         <button type="submit" class="block bg-green-500 text-white mt-10 md:mt-18 py-3 md:py-6 px-5 md:px-10 rounded-lg hover:bg-red-500"> Read More </button>
+         </div>
+      </article>
+      
+       <!-- news 2  -->
+       <article data-aos="fade-up" class="grid bg-gray-100 text-sm md:text-3xl pb-5 border">
+         <div class=" overflow-hidden rounded-t">
+           <img src="https://i.ibb.co/TYVjVdM/1674711726455563-0.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+         </div>
+         <!-- date-->
+         <div class="px-2">
+           <h3 class="mt-8 md:mt-18 text-gray-900 "> April 2, 2025</h3>
+           <!-- topic-->
+           <h3 class="font-bold text-base md:text-4xl mt-8 md:mt-18 uppercase"> Join the 30 days Hifz Challenge </h3>
+           <!-- display-->
+           <p class="mt-8 md:mt-18 text-gray-900"> Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae… </p>
+           <!-- display-->
+           <button type="submit" class="block bg-green-500 text-white mt-10 md:mt-18 py-3 md:py-6 px-5 md:px-10 rounded-lg hover:bg-red-500"> Read More </button>
+         </div>
+       </article>
+    </div>
+    
+    
+      <div class="flex justify-center mt-20 ">
+        <button type=" " class="inline-block animate-float-in-from-bottom text-white mr-5 font-bold text-center btn  rounded-3xl uppercase md:text-5xl md:px-14 md:py-9 px-5 py-2 text-lg font-extrabold bg-green-600   shadow-lg tracking-wider rounded text-white text-sm hover:bg-green-900 "> <a href="news.html"> Read more </a></button>
+      </div>
+  
+  </section>
+  
+  
+<!-- Drop message for us-->
+<section class="px-2.5 pt-16 pb-24 section-color md:flex md:justify-center text-center" id="message-us">
+  <div class=" ">
+    <h2 class="font-bold text-green-600 text-3xl md:text-6xl mt-3 md:mt-10 tracking-widest"> Message Us </h2>
+    <p class="text-sm md:text-4xl mt-3 md:mt-10 font-light"> Drop a message for us via: </p>
+  </div>
+  <!--whatsapp message-->
+     <div class="mt-8 md:mt-16">
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark" name="message" id="messageInput"
+              placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center items-center mt-5 px-4 py-2 bg-green-500 text-lg md:text-3xl text-white font-bold uppercase shadow-lg inline-block mt-5 "
+              type="submit" style="width: 90vw; ">Send on WhatsApp</button>
+          </div>
+        </form>
+      </div>
+      
+      <h3 class="text-lg md:text-3xl text-center font-semibold my-8 "> Or <br /> Send Us a Mail</h3>
+     <div class=" ">
+          <form class="  " action="https://formspree.io/f/xeoalkll" method="POST" style="width: ">
+            <!--<label class="inline-block text-sm md:text-3xl font-semibold text-justify justify-between text-black hover:border-yellow-500" style="">      </label>-->
+            <div class="flex items-center justify-center">
+              <input class="shadow-lg  py-2.5 px-2 md:px-4 border-1 text-black border-gray-300 inline-block text-sm md:text-2xl" type="email" name="email" placeholder="your@email.com" style="width: 90vw; height:7vh">
+            </div>
+           <!-- <label class="inline-block mt-5 text-sm md:text-3xl flex text-black items-center justify-between font-semibold">   </label>-->
+            <div class="flex items-center justify-center mt-5 md:mt-10">
+              <textarea class="bg-white p-2 text-black text-sm md:text-2xl border-1 border-gray-300" placeholder="your message here" name="message" style="height: 32vh; width: 90vw"></textarea>
+            </div>
+            <!-- your other form fields go here -->
+            <div class="flex items-center justify-center">
+              <button class="text-center mt-5 px-4 py-2 text-lg md:text-4xl text-white font-bold uppercase  bg-green-500 shadow-lg" type="submit" style="width: 90vw; ">Send Email</button>
+            </div>
+          </form>
+        </div>
+
+</section>
+
+</main>
+<footer class="text-center pt-14 pb-7 text-white px-5 md:px-14">
+  <div class="md:flex justify-center px-2 md:px-8">
+    <div class="flex justify-center mx-auto ">
+      <img class="max-h-16 md:h-24 bg-white px-3 py-2" src="https://i.ibb.co/8ghHmDF4/Green-Pastel-Modern-Mosque-Islamic-Center-Logo-2-removebg-preview.png" alt="" />
+    </div>
+    <p class="text-sm md:text-3xl mt-3 md-mt8 "> Since 1987, Our institution guiding students and people around the world. Helping others in region with astonishing facilities.</p>
+  </div>
+  
+  <!--Quick Links--->
+  <div class="mt-12 md:mt-18 text-sm md:text-3xl">
+    <h3 class="font-bold text-base md:text-4xl mb-3"> Quick Links</h3>
+    <a href="" class="block mb-3"> About Us </a>
+    <a href=" " class="block mb-3"> Our Services</a>
+    <a href=" " class="block mb-3"> Our Schedule </a>
+    <a href=" " class="block text-center"> News and Updates </a>
+  </div>
+  
+    <!--contact us--->
+  <div class="mt-12 md:mt-18 text-sm md:text-3xl">
+    <h3 class="font-bold text-base md:text-4xl mb-3"> Contact Us</h3>
+    <p class="mb-3"> <i class="fas fa-location text-2xl"> </i> <br /> Sagamu, Ogun State, Nigeria. </p>
+        <p class=" mb-3"> <i class="fas fa-envelope text-2xl"> </i> <br /> alhudaacademy100@gmail.com </p>
+    <p class=" "> <i class="fas fa-envelope text-2xl"> </i> <br /> 08029675288, 08131148640</p>
+  </div>
+  
+  <hr class="my-12"/>
+  
+  <!--- copyright--> 
+  
+  <div class="">
+    
+  <p class="text-xs md:text-3xl "> <i class="fas fa-copyright text-sm "></i> <span id="copyright-year"> </span><a href="index.html" class="text-red-500">  Al-Hudaa Academy</a> || All Rights Reserved.</p>
+  <p class="text-xs"> Designed by <a href="# " class="text-red-500"> Al-Qosim</a></p>
+  </div>
+</footer>
+  
   <!-- Project -->
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var currentYear = new Date().getFullYear();
+      document.getElementById('copyright-year').textContent = currentYear;
+    });
+  </script>
 </body>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 </html>
