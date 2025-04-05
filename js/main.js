@@ -15,6 +15,24 @@ function myFunction(x) {
   //JS TYPEWR
   
   
+  
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    effect: "fade",
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    speed: 1000,
+  });
+
+
+
+  
    /*WhatsApp me anchor */
   document.getElementById("messageForm").addEventListener("submit", function(event) {
     event.preventDefault();
